@@ -4,268 +4,181 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moun Patel — Portfolio</title>
-  <meta name="description" content="Portfolio of Moun Patel, a developer crafting calm, thoughtful digital work." />
-  <link rel="stylesheet" href="style.css?v=16" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== Animated background ===== -->
-  <div class="bg-orbs" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
-    <span class="orb orb-4"></span>
-  </div>
-
-  <!-- ===== Header / Nav ===== -->
-  <header class="site-header">
+  <header class="header">
     <div class="container nav">
-      <a href="#top" class="brand">Moun&nbsp;Patel<span class="brand-dot">.</span></a>
-      <nav class="nav-links" aria-label="Primary">
+      <a href="#top" class="logo">Moun Patel.</a>
+      <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#work">Work</a>
         <a href="#photos">Photos</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-
-    <!-- ===== Cinematic scroll hero ===== -->
-    <section class="cinema" id="hero">
-      <div class="cinema-track">
-        <figure class="cinema-photo">
-          <img src="images/hero.jpg" alt="Moun Patel" />
-        </figure>
-        <div class="cinema-tint" aria-hidden="true"></div>
-        <div class="cinema-scrim" aria-hidden="true"></div>
-        <h1 class="cinema-name"><span>Moun</span><span class="accent">Patel</span></h1>
-        <p class="cinema-sign">
-          <span style="background: linear-gradient(90deg, var(--violet), #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Builder & Aspiring Founder</span>
-          <span style="color: #fff;">Crafting bold, thoughtful projects.</span>
-        </p>
-        <span class="cinema-hint">Scroll to explore ↓</span>
-      </div>
-    </section>
-
-    <!-- ===== Intro ===== -->
-    <section class="section container intro">
-      <p class="eyebrow">Portfolio — 2026</p>
-      <h2 class="section-title">I build bold, thoughtful things.</h2>
-      <p class="hero-lead">
-        A 1st-year student at Scaler School of Technology focused on learning,
-        building real-world projects, and bringing startup ideas to life.
-      </p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-accent">View my work</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
-      <ul class="hero-meta">
-        <li><span class="dot"></span> 1st-Year Student</li>
-        <li>Scaler School of Technology</li>
-        <li>mounpatel2008@gmail.com</li>
-      </ul>
-    </section>
-
-    <!-- ===== Marquee band ===== -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Moun Patel<span class="sep">✦</span>Scaler School of Technology<span class="sep">✦</span>2026<span class="sep">✦</span>Portfolio<span class="sep">✦</span></span>
-        <span>Moun Patel<span class="sep">✦</span>Scaler School of Technology<span class="sep">✦</span>2026<span class="sep">✦</span>Portfolio<span class="sep">✦</span></span>
-      </div>
-    </div>
-
-    <!-- ===== About ===== -->
-    <section class="section container" id="about">
-      <span class="ghost">About</span>
-      <p class="eyebrow">About</p>
-      <div class="about-grid">
-        <h2 class="section-title">
-          A student and maker who cares about the small details.
-        </h2>
-        <div class="about-body">
-          <p>
-            I'm a 1st-year student at Scaler School of Technology learning to design, code, and build.
-            I like turning ideas into functional applications and I care deeply about how things
-            look, feel, and work under the hood.
-          </p>
-          <p>
-            When I'm not studying, you'll find me brainstorming startup ideas, building things from scratch,
-            and slowly getting better one project at a time. I have a strong builder mindset.
-          </p>
-          <div class="stats">
-            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects built</span></div>
-            <div class="stat"><span class="stat-num">1st</span><span class="stat-label">Year at SST</span></div>
-            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Startup Ideas</span></div>
-          </div>
+    <!-- Hero Section -->
+    <section class="section hero container">
+      <div class="hero-content">
+        <h1>I build bold, thoughtful things.</h1>
+        <p>A 1st-year student at Scaler School of Technology focused on learning, building real-world projects, and bringing startup ideas to life.</p>
+        <div class="hero-buttons">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== Skills ===== -->
-    <section class="section container" id="skills">
-      <span class="ghost">Skills</span>
-      <p class="eyebrow">Skills</p>
-      <h2 class="section-title">Tools &amp; things I work with.</h2>
-      <div class="skills-grid">
-        <div class="skill-col">
-          <h3>Languages</h3>
-          <ul class="tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li>
-          </ul>
-        </div>
-        <div class="skill-col">
-          <h3>Mindset</h3>
-          <ul class="tags">
-            <li>Startup Building</li><li>Problem Solving</li><li>Product Thinking</li><li>Innovation</li>
-          </ul>
-        </div>
-        <div class="skill-col">
-          <h3>Tools</h3>
-          <ul class="tags">
-            <li>Git</li><li>Figma</li><li>VS Code</li><li>Responsive Design</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Work / Projects ===== -->
-    <section class="section container" id="work">
-      <span class="ghost">Work</span>
-      <p class="eyebrow">Selected work</p>
-      <h2 class="section-title">A few things I've made.</h2>
-      <div class="work-grid">
-
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">01</span>
-            <span class="card-year">2026</span>
-          </div>
-          <h3 class="card-title">Habit Tracker</h3>
-          <p class="card-desc">
-            A functional application to help users track their daily habits, maintain streaks, and build discipline.
-          </p>
-          <ul class="tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
-          </ul>
-          <a href="#" class="card-link">View project →</a>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">02</span>
-            <span class="card-year">2026</span>
-          </div>
-          <h3 class="card-title">Ketalist</h3>
-          <p class="card-desc">
-            An advanced note-making platform featuring smart saving, an integrated AI chatbot for better understanding, and an exam creator.
-          </p>
-          <ul class="tags">
-            <li>Software</li><li>UI/UX</li><li>JavaScript</li>
-          </ul>
-          <a href="#" class="card-link">View project →</a>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">03</span>
-            <span class="card-year">2026</span>
-          </div>
-          <h3 class="card-title">Startup Concepts</h3>
-          <p class="card-desc">
-            Various prototypes and minimum viable products (MVPs) I code while exploring my own entrepreneurial ideas.
-          </p>
-          <ul class="tags">
-            <li>Java</li><li>Python</li><li>Prototyping</li>
-          </ul>
-          <a href="#" class="card-link">View project →</a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===== Photos / Gallery ===== -->
-    <section class="section container" id="photos">
-      <span class="ghost">Photos</span>
-      <p class="eyebrow">Photos</p>
-      <h2 class="section-title">A few moments &amp; shots.</h2>
-      <p class="gallery-hint">Moments from the road — lanterns, castles, caves &amp; the mountains.</p>
-      <div class="gallery">
-        <figure class="photo"><img src="images/1 (1).jpeg" alt="Moun Patel in a red scarf" /></figure>
-        <figure class="photo"><img src="images/img-d.jpg" alt="Moun Patel at the Ellora caves" /></figure>
-        <figure class="photo"><img src="images/img-f.jpg" alt="Moun Patel in the snowy Himalayas" /></figure>
-      </div>
-    </section>
-
-    <!-- ===== Writing / Thoughts ===== -->
-    <section class="section container" id="writing">
-      <span class="ghost">Writing</span>
-      <p class="eyebrow">Writing</p>
-      <h2 class="section-title">My thoughts.</h2>
-      <div class="posts">
-
-        <a href="#" class="post">
-          <div class="post-main">
-            <h3 class="post-title">Thinking like a founder</h3>
-            <p class="post-excerpt">Why I believe in building startups and learning by creating my own products from scratch.</p>
-          </div>
-          <div class="post-meta">
-            <span>Mar 2026</span>
-            <span>4 min read</span>
-          </div>
-        </a>
-
-        <a href="#" class="post">
-          <div class="post-main">
-            <h3 class="post-title">My journey at Scaler</h3>
-            <p class="post-excerpt">What my 1st year at Scaler School of Technology is teaching me about code and life.</p>
-          </div>
-          <div class="post-meta">
-            <span>Jan 2026</span>
-            <span>6 min read</span>
-          </div>
-        </a>
-
-        <a href="#" class="post">
-          <div class="post-main">
-            <h3 class="post-title">From HTML to Python</h3>
-            <p class="post-excerpt">Navigating the transition between front-end dev and backend logic in Java and Python.</p>
-          </div>
-          <div class="post-meta">
-            <span>Nov 2026</span>
-            <span>3 min read</span>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- ===== Contact CTA ===== -->
-    <section class="cta" id="contact">
-      <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h2 class="cta-title">Let's work<br /><span class="accent">together.</span></h2>
-        <p class="cta-lead">
-          Got a project, a question, or just want to say hi? My inbox is always open.
-        </p>
-        <a href="mailto:mounpatel2008@gmail.com" class="btn btn-accent btn-lg">mounpatel2008@gmail.com</a>
-        <ul class="socials">
-          <li><a href="https://github.com/mounnn09" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/moun-patel-15390b3b0" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/mounnn.09_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <ul class="hero-info">
+          <li>1st-Year Student</li>
+          <li>Scaler School of Technology</li>
+          <li>mounpatel2008@gmail.com</li>
         </ul>
       </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Moun Patel" />
+      </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a 1st-year student at Scaler School of Technology learning to design, code, and build. I like turning ideas into functional applications and I care deeply about how things look, feel, and work under the hood.</p>
+          <p>When I'm not studying, you'll find me brainstorming startup ideas, building things from scratch, and slowly getting better one project at a time. I have a strong builder mindset.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Projects built</p>
+          </div>
+          <div class="stat">
+            <h3>1st</h3>
+            <p>Year at SST</p>
+          </div>
+          <div class="stat">
+            <h3>∞</h3>
+            <p>Startup Ideas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Languages</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Mindset</h3>
+          <ul>
+            <li>Startup Building</li>
+            <li>Problem Solving</li>
+            <li>Product Thinking</li>
+            <li>Innovation</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>VS Code</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section container">
+      <h2>Selected Work</h2>
+      <div class="work-grid">
+        <div class="card">
+          <span>01 - 2026</span>
+          <h3>Habit Tracker</h3>
+          <p>A functional application to help users track their daily habits, maintain streaks, and build discipline.</p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+          <a href="#">View project &rarr;</a>
+        </div>
+        <div class="card">
+          <span>02 - 2026</span>
+          <h3>Ketalist</h3>
+          <p>An advanced note-making platform featuring smart saving, an integrated AI chatbot for better understanding, and an exam creator.</p>
+          <p><strong>Tools:</strong> Software, UI/UX, JavaScript</p>
+          <a href="#">View project &rarr;</a>
+        </div>
+        <div class="card">
+          <span>03 - 2026</span>
+          <h3>Startup Concepts</h3>
+          <p>Various prototypes and minimum viable products (MVPs) I code while exploring my own entrepreneurial ideas.</p>
+          <p><strong>Tools:</strong> Java, Python, Prototyping</p>
+          <a href="#">View project &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="section container">
+      <h2>Photos</h2>
+      <div class="photo-grid">
+        <img src="images/1 (1).jpeg" alt="Moun Patel in a red scarf" />
+        <img src="images/img-d.jpg" alt="Moun Patel at the Ellora caves" />
+        <img src="images/img-f.jpg" alt="Moun Patel in the snowy Himalayas" />
+      </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="section container">
+      <h2>Writing</h2>
+      <div class="posts">
+        <div class="post">
+          <h3>Thinking like a founder</h3>
+          <p>Why I believe in building startups and learning by creating my own products from scratch.</p>
+          <span>Mar 2026 | 4 min read</span>
+        </div>
+        <div class="post">
+          <h3>My journey at Scaler</h3>
+          <p>What my 1st year at Scaler School of Technology is teaching me about code and life.</p>
+          <span>Jan 2026 | 6 min read</span>
+        </div>
+        <div class="post">
+          <h3>From HTML to Python</h3>
+          <p>Navigating the transition between front-end dev and backend logic in Java and Python.</p>
+          <span>Nov 2026 | 3 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container contact-section">
+      <h2>Let's work together.</h2>
+      <p>Got a project, a question, or just want to say hi? My inbox is always open.</p>
+      <a href="mailto:mounpatel2008@gmail.com" class="btn btn-primary">Email Me</a>
+      <ul class="social-links">
+        <li><a href="https://github.com/mounnn09">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/moun-patel-15390b3b0">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/mounnn.09_/">Instagram</a></li>
+      </ul>
+    </section>
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© 2026 Moun Patel</span>
-      <span>Built with HTML &amp; CSS</span>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Moun Patel</p>
+      <p>Built with HTML & CSS</p>
     </div>
   </footer>
 
